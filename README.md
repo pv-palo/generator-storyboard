@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/32459498/README.md)
 # Storyboard Studio
 
 Aplicación web (React + TypeScript + Tailwind CSS) para gestionar guiones de storyboard y exportarlos como script ExtendScript (`.jsx`) ejecutable en Adobe Illustrator.
