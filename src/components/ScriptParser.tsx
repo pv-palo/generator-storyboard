@@ -125,11 +125,7 @@ export const ScriptParser: React.FC<ScriptParserProps> = ({ frames, onFramesChan
                   </span>
                 </div>
 
-                <div className="flex-1 bg-white border border-[#d1d7c9] hover:border-[#b0b8a8] rounded-xl p-3 px-3.5 shadow-3xs transition-all relative">
-                  <div className="flex items-center justify-between mb-2.5 border-b border-[#f0f3eb] pb-1.5">
-                    <span className="text-[10px] font-bold uppercase text-[#5a6b5c] tracking-wider select-none">
-                      Configuración del Plano
-                    </span>
+                <div className="flex items-center justify-end mb-2.5 border-b border-[#f0f3eb] pb-1.5">
                     <div className="flex items-center gap-1">
                       <button onClick={() => handleMoveUp(index)} disabled={index === 0} className="p-1 text-[#5a6b5c] hover:text-[#1a2d1d] disabled:opacity-20 cursor-pointer">
                         <ChevronUp className="h-4 w-4" />
