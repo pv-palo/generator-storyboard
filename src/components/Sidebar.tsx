@@ -1,6 +1,7 @@
 import React from 'react';
 import { Frame, StoryboardConfig } from '../types';
 import { generateJSX } from '../utils/jsxGenerator';
+import { IllustratorPreview } from './IllustratorPreview';
 import { Download, Film, Trash2 } from 'lucide-react';
 
 interface SidebarProps {
@@ -61,7 +62,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ frames, config, onConfigChange
             </button>
           </div>
         </div>
-
+        <div className="bg-white border border-[#cbd0c4] rounded-xl p-3.5 space-y-2.5 shadow-3xs">
+          <div className="flex items-center justify-between">
+            <span className="text-xs font-bold text-[#1a2d1d]">Vista previa en Illustrator</span>
+          </div>
+          <IllustratorPreview frame={frames[0]} />
+        </div>
         <div className="bg-white border border-[#cbd0c4] rounded-xl p-3.5 space-y-2.5 shadow-3xs text-xs">
           <label className="font-bold text-[10px] uppercase text-[#5a6b5c] tracking-wider block">
             Nombre del Proyecto
