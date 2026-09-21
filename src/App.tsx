@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Frame, StoryboardConfig } from './types';
 import { Sidebar } from './components/Sidebar';
 import { ScriptParser } from './components/ScriptParser';
